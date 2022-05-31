@@ -1,0 +1,40 @@
+html {
+    width: 768px;
+    height: 1016px;
+}
+
+
+body {
+    padding: 72px;
+}
+
+#name {
+    padding-left: 38px;
+    font-weight: 700;
+    text-align: right;
+    font-size: 24px;
+    border-bottom: 2px black solid;
+}
+
+hr.new1 {
+    border-top: red;
+}
+
+.header {
+    width: auto;
+}
+
+.header-subtext-container {
+    display: flex;
+}
+
+.header-subtext {
+    flex-grow: 1;
+    padding: auto;
+    margin: auto;
+    text-align: center
+}
+
+.header-subtext:nth-child(1n+2) {
+    border-left: 1px solid black;
+}
