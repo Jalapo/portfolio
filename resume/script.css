@@ -1,12 +1,11 @@
 html {
-    /*width: 768px;
-    height: 1016px;*/
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
 body {
     padding: 72px;
+    padding-top: 24px;
     justify-content: center;
 }
 
@@ -36,49 +35,12 @@ body {
     border-left: 1px solid black;
 }
 
-
-/*
-.main {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.row {
-    display: flex;
-}
-
-.row * {
-    margin-top: 0;
-    flex: 1 1 0;
-}
-
-.titles {
-    font-size: 18px;
-}
-
-.skills {
-    border: 1px solid blue;
-    display: grid;
-    grid: 25px 40px / auto auto;
-    grid: 'li li'
-        'li li';
-    list-style: none;
-}
-
-.skills li {
-    grid-area
-
-}
-*/
-
 .main {
     display: grid;
     grid:  'box1 box2' 
             'box3 box4'
+            'box7 box8'
             'box5 box6';
-    /border: 1px solid blue;
 }
 
 .box1 {grid-area: box1;}
@@ -88,7 +50,7 @@ body {
     list-style: none;
     display: grid;
     text-align: center;
-    grid: '. .' '. .';
+    grid: '. .' '. .' 'sk5 sk5';
     padding-right: 40px;
     margin: 0;
     
@@ -97,20 +59,26 @@ body {
 .box4 {grid-area: box4;}
 .box5 {grid-area: box5;}
 .box6 {grid-area: box6;}
+.box7 {grid-area: box7;}
+.box8 {grid-area: box8;}
 
+
+
+#sk5 {
+    grid-area: sk5;
+}
 
 .main > * {
-    /*border: 1px solid red;*/
     margin-top: 30px;
 }
 
-.box1, .box3, .box5 {
+.box1, .box3, .box5, .box7 {
     font-size: 18px;
     font-weight: 600;
     color: rgba(40, 40, 40, 0.8)
 }
 
-.box4, .box6 {
+.box4, .box6, .box8 {
     padding-left: 40px;
 }
 
@@ -128,12 +96,12 @@ body {
     font-weight: 600;
     font-size: 17px;
     text-align: left;
-    text-decoration: underline;
 }
 .job-location {
     grid-area: jl;
     text-align: right;
     margin-top: -6px;
+    margin-bottom: 3px;
 }
 .job-period {
     grid-area: jp;
@@ -144,14 +112,89 @@ body {
     list-style: none;
     margin-top: 10px;
     padding-left: 0px;
-    margin-left: 1em;
+    margin-left: -1em;
+    text-indent: -1em;
+    margin-bottom: 40px;
 }
 
 .job-desc>* {
     margin-top: -0.5em;
     margin-bottom: 10px;
-    text-indent:-1em;
+    margin-left: 2em;   
+}
+
+.project {
+    display: grid;
+    grid-template-areas:   'pi pt ps'
+                            'pi pd ps';
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto 1fr; /* 1fr allows the elements to take up 100% of the free space available, similar to flex-grow */
+    text-align: left;
+    justify-items: auto;
+    list-style-position: inside; /* prevents list bullet points from staying outside of element box */
+    margin-bottom: 24px;
+}
+
+.project-img {
+    grid-area: pi;
+    width: 8em;
+    height: 8em;
+    border: 1px hsl(0, 0%, 80%) solid;
+    border-radius: 1.5em;
+    box-sizing: border-box;
+    margin-right: 16px;
+}
+
+#resume:hover {
+    width: 10em;
+    height: 10em;
+}
+
+.project-title {
+    grid-area: pt;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 6px;
+}
+
+.project-desc {
+    grid-area: pd;
+    /*word-break: break-word; /* breaks lines after word, fixes the text-wrapping and stretching */
+}
+
+.project-skills, .project-skills>ul {
+    margin-top: 0;
+    grid-area: ps;
     
-    
+}
+
+.project-skills span {text-decoration: underline;}
+
+
+
+
+
+.edu {
+    display: grid;
+    grid: 'ea ea' '. .' 'ed ed';
+    margin-bottom: 24px;
+}
+
+
+.edu-award {
+    grid-area: ea;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.edu-period {
+    text-align: right;
+}
+
+.edu-desc {
+    grid-area: ed;
+    font-style: italic;
+    text-indent: 2em;
 }
 
