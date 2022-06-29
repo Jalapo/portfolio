@@ -1,0 +1,166 @@
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  padding-top: 1.5rem;
+  justify-content: center;
+  margin: 0;
+}
+
+.header {
+  width: 100%;
+}
+.header div {
+  text-align: center;
+}
+.header #name {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.header #loc {
+  font-size: 1.2rem;
+  font-weight: 100;
+  margin-bottom: 0.4rem;
+}
+.header .header-subtext-container {
+  display: flex;
+}
+.header .header-subtext-container .header-subtext {
+  flex-grow: 1;
+  margin: auto;
+}
+.header .header-subtext-container .header-subtext:nth-child(1n+2) {
+  border-left: 1px solid black;
+}
+
+.box2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  gap: 1rem;
+}
+
+#sk5 {
+  grid-area: sk5;
+}
+
+.main > * {
+  margin-top: 1rem;
+}
+
+.box1, .box3, .box5, .box7 {
+  font-size: 18px;
+  font-weight: 600;
+  color: hsl(0deg, 0%, 32.5%);
+  border-bottom: 2px solid hsl(0deg, 0%, 0%);
+}
+
+.box3, .box4 {
+  margin-top: 40px;
+}
+
+.job {
+  display: grid;
+  grid: "jt jp" "jl jl" "jd jd";
+  /*grid: 'jt' 'jd' 'jl' 'jp';*/
+}
+
+.job-title {
+  grid-area: jt;
+  font-weight: 600;
+  font-size: 17px;
+  text-align: left;
+}
+
+.job-location {
+  grid-area: jl;
+  text-align: right;
+  margin-top: -6px;
+  margin-bottom: 3px;
+}
+
+.job-period {
+  grid-area: jp;
+  text-align: right;
+}
+
+.job-desc {
+  grid-area: jd;
+  list-style: none;
+  margin-top: 0px;
+  padding-left: 0px;
+  margin-bottom: 40px;
+}
+.job-desc > * {
+  margin-top: -0.5em;
+  margin-bottom: 10px;
+}
+
+.project {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: auto;
+  list-style-position: inside;
+  /* prevents list bullet points from staying outside of element box */
+  margin-bottom: 24px;
+}
+
+#resume:hover {
+  width: 10em;
+  height: 10em;
+}
+
+.project-title {
+  grid-area: pt;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 6px;
+}
+
+.project-desc {
+  grid-area: pd;
+  /*word-break: break-word; /* breaks lines after word, fixes the text-wrapping and stretching */
+}
+
+.project-skills, .project-skills > ul {
+  margin-top: 0;
+  grid-area: ps;
+}
+
+.project-skills span {
+  text-decoration: underline;
+}
+
+.edu {
+  display: grid;
+  grid: "ea ea" ". ." "ed ed";
+  margin-bottom: 24px;
+}
+
+.edu-award {
+  grid-area: ea;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.edu-period {
+  text-align: right;
+}
+
+.edu-desc {
+  grid-area: ed;
+  font-style: italic;
+  text-indent: 2em;
+}
+
+/* 
+changed layout
+added skills
+redesigned projects section
+*//*# sourceMappingURL=scripts.css.map */
