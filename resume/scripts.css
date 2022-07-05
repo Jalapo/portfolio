@@ -57,10 +57,10 @@ body {
   font-weight: 600;
   color: hsl(0deg, 0%, 32.5%);
   border-bottom: 2px solid hsl(0deg, 0%, 0%);
+  margin-bottom: 1rem;
 }
-
-.box3, .box4 {
-  margin-top: 40px;
+.box1[class=box7], .box3[class=box7], .box5[class=box7], .box7[class=box7] {
+  margin-top: -1.5rem;
 }
 
 .job {
@@ -93,11 +93,14 @@ body {
   list-style: none;
   margin-top: 0px;
   padding-left: 0px;
-  margin-bottom: 40px;
 }
 .job-desc > * {
   margin-top: -0.5em;
   margin-bottom: 10px;
+}
+
+.box2, .box4, .box6, .box8 {
+  margin-bottom: 1rem;
 }
 
 .project {
@@ -107,34 +110,26 @@ body {
   margin: auto;
   list-style-position: inside;
   /* prevents list bullet points from staying outside of element box */
-  margin-bottom: 24px;
 }
-
-#resume:hover {
-  width: 10em;
-  height: 10em;
+.project .project-text {
+  display: flex;
+  flex-direction: column;
 }
-
-.project-title {
-  grid-area: pt;
+.project .project-title {
   font-size: 17px;
   font-weight: 600;
   text-align: left;
   margin-bottom: 6px;
 }
-
-.project-desc {
-  grid-area: pd;
-  /*word-break: break-word; /* breaks lines after word, fixes the text-wrapping and stretching */
+.project .project-desc {
+  /* word-break: break-word; /* breaks lines after word, fixes the text-wrapping and stretching */
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-
-.project-skills, .project-skills > ul {
-  margin-top: 0;
-  grid-area: ps;
-}
-
-.project-skills span {
-  text-decoration: underline;
+.project .project-skills, .project .project-skills > ul {
+  align-self: center;
+  margin-top: 0.3rem;
 }
 
 .edu {

@@ -66,11 +66,10 @@ body {
     font-weight: 600;
     color: hsl(0, 0%, 32.5%);
     border-bottom: 2px solid hsl(0, 0%, 0%);
-}
-
-
-.box3, .box4 {
-    margin-top: 40px;
+    margin-bottom: 1rem;
+    &[class=box7] {
+        margin-top: -1.5rem;
+    }
 }
 
 .job {
@@ -99,14 +98,15 @@ body {
     list-style: none;
     margin-top: 0px;
     padding-left: 0px;
-    margin-bottom: 40px;
     >* {
         margin-top: -0.5em;
         margin-bottom: 10px;
     }
 }
 
-
+.box2, .box4, .box6, .box8 {
+    margin-bottom: 1rem;
+}
 
 .project {
     display: flex;
@@ -114,36 +114,32 @@ body {
     justify-content: space-between;
     margin: auto;
     list-style-position: inside; /* prevents list bullet points from staying outside of element box */
-    margin-bottom: 24px;
-}
 
-
-#resume:hover {
-    width: 10em;
-    height: 10em;
-}
-
-.project-title {
-    grid-area: pt;
-    font-size: 17px;
-    font-weight: 600;
-    text-align: left;
-    margin-bottom: 6px;
-}
-
-.project-desc {
-    grid-area: pd;
-    /*word-break: break-word; /* breaks lines after word, fixes the text-wrapping and stretching */
-}
-
-.project-skills, .project-skills>ul {
-    margin-top: 0;
-    grid-area: ps;
+    .project-text {
+        display: flex;
+        flex-direction: column;
+    }
+    .project-title {
+        font-size: 17px;
+        font-weight: 600;
+        text-align: left;
+        margin-bottom: 6px;
+    }
     
+    .project-desc {
+        /* word-break: break-word; /* breaks lines after word, fixes the text-wrapping and stretching */
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    
+    .project-skills, .project-skills>ul {
+        align-self: center;
+        margin-top: 0.3rem;
+    }
+
 }
-
-.project-skills span {text-decoration: underline;}
-
 
 
 
