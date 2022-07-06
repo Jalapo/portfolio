@@ -34,7 +34,22 @@ body {
   border-left: 1px solid black;
 }
 
-.box2 {
+.main {
+  margin-top: 1rem;
+}
+.main > * {
+  margin-bottom: 1rem;
+}
+.main .title {
+  font-size: 18px;
+  font-weight: 600;
+  color: hsl(0deg, 0%, 32.5%);
+  border-bottom: 2px solid hsl(0deg, 0%, 0%);
+}
+.main .content {
+  margin-bottom: 1rem;
+}
+.main #skills {
   display: flex;
   flex-wrap: wrap;
   width: 50%;
@@ -43,23 +58,7 @@ body {
   padding: 0;
   gap: 1rem;
 }
-
-#sk5 {
-  grid-area: sk5;
-}
-
-.main > * {
-  margin-top: 1rem;
-}
-
-.box1, .box3, .box5, .box7 {
-  font-size: 18px;
-  font-weight: 600;
-  color: hsl(0deg, 0%, 32.5%);
-  border-bottom: 2px solid hsl(0deg, 0%, 0%);
-  margin-bottom: 1rem;
-}
-.box1[class=box7], .box3[class=box7], .box5[class=box7], .box7[class=box7] {
+.main #projects {
   margin-top: -1.5rem;
 }
 
@@ -68,43 +67,36 @@ body {
   grid: "jt jp" "jl jl" "jd jd";
   /*grid: 'jt' 'jd' 'jl' 'jp';*/
 }
-
-.job-title {
+.job .job-title {
   grid-area: jt;
   font-weight: 600;
   font-size: 17px;
   text-align: left;
 }
-
-.job-location {
+.job .job-location {
   grid-area: jl;
   text-align: right;
   margin-top: -6px;
-  margin-bottom: 3px;
+  margin-bottom: 0.3rem;
 }
-
-.job-period {
+.job .job-period {
   grid-area: jp;
   text-align: right;
 }
-
-.job-desc {
+.job .job-desc {
   grid-area: jd;
   list-style: none;
   margin-top: 0px;
   padding-left: 0px;
 }
-.job-desc > * {
+.job .job-desc > * {
   margin-top: -0.5em;
   margin-bottom: 10px;
 }
 
-.box2, .box4, .box6, .box8 {
-  margin-bottom: 1rem;
-}
-
 .project {
   display: flex;
+  margin-bottom: 1rem;
   list-style-position: inside;
   /* prevents list bullet points from staying outside of element box */
 }
@@ -148,18 +140,15 @@ body {
   grid: "ea ea" ". ." "ed ed";
   margin-bottom: 24px;
 }
-
-.edu-award {
+.edu .edu-award {
   grid-area: ea;
   font-weight: 600;
   font-size: 17px;
 }
-
-.edu-period {
+.edu .edu-period {
   text-align: right;
 }
-
-.edu-desc {
+.edu .edu-desc {
   grid-area: ed;
   font-style: italic;
   text-indent: 2em;

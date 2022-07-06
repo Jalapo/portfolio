@@ -40,76 +40,78 @@ body {
     }
 }
 
-.box2 {
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    list-style: none;
-    text-align: center;
-    padding: 0;
-    gap: 1rem;
-    
-}
-
-
-
-#sk5 {
-    grid-area: sk5;
-}
-
-.main > * {
+.main {
     margin-top: 1rem;
-}
+    >* {
+        margin-bottom: 1rem;
+    }
+    .title {
+        font-size: 18px;
+        font-weight: 600;
+        color: hsl(0, 0%, 32.5%);
+        border-bottom: 2px solid hsl(0, 0%, 0%);
+    }
 
-.box1, .box3, .box5, .box7 {
-    font-size: 18px;
-    font-weight: 600;
-    color: hsl(0, 0%, 32.5%);
-    border-bottom: 2px solid hsl(0, 0%, 0%);
-    margin-bottom: 1rem;
-    &[class=box7] {
+    .content {
+        margin-bottom: 1rem;
+    }
+
+    #skills {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        gap: 1rem;
+    }
+
+    #projects {
         margin-top: -1.5rem;
     }
 }
 
+
+
+
+
+
+
 .job {
     display: grid;
     grid: 'jt jp' 'jl jl' 'jd jd'; /*grid: 'jt' 'jd' 'jl' 'jp';*/
-}
 
-.job-title {
-    grid-area: jt;
-    font-weight: 600;
-    font-size: 17px;
-    text-align: left;
-}
-.job-location {
-    grid-area: jl;
-    text-align: right;
-    margin-top: -6px;
-    margin-bottom: 3px;
-}
-.job-period {
-    grid-area: jp;
-    text-align: right;
-}
-.job-desc {
-    grid-area: jd;
-    list-style: none;
-    margin-top: 0px;
-    padding-left: 0px;
-    >* {
-        margin-top: -0.5em;
-        margin-bottom: 10px;
+    .job-title {
+        grid-area: jt;
+        font-weight: 600;
+        font-size: 17px;
+        text-align: left;
     }
-}
-
-.box2, .box4, .box6, .box8 {
-    margin-bottom: 1rem;
+    .job-location {
+        grid-area: jl;
+        text-align: right;
+        margin-top: -6px;
+        margin-bottom: 0.3rem;
+    }
+    .job-period {
+        grid-area: jp;
+        text-align: right;
+    }
+    .job-desc {
+        grid-area: jd;
+        list-style: none;
+        margin-top: 0px;
+        padding-left: 0px;
+        >* {
+            margin-top: -0.5em;
+            margin-bottom: 10px;
+        }
+    }
 }
 
 .project {
     display: flex;
+    margin-bottom: 1rem;
     // width: 100%;
     // justify-content: space-between;
     // margin: auto;
@@ -159,23 +161,22 @@ body {
     display: grid;
     grid: 'ea ea' '. .' 'ed ed';
     margin-bottom: 24px;
-}
 
-
-.edu-award {
-    grid-area: ea;
-    font-weight: 600;
-    font-size: 17px;
-}
-
-.edu-period {
-    text-align: right;
-}
-
-.edu-desc {
-    grid-area: ed;
-    font-style: italic;
-    text-indent: 2em;
+    .edu-award {
+        grid-area: ea;
+        font-weight: 600;
+        font-size: 17px;
+    }
+    
+    .edu-period {
+        text-align: right;
+    }
+    
+    .edu-desc {
+        grid-area: ed;
+        font-style: italic;
+        text-indent: 2em;
+    }
 }
 
 /* 
