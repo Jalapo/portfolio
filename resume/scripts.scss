@@ -17,13 +17,13 @@ body {
 
     #name {
         font-weight: 700;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
     
     #loc {
         font-size: 1.2rem;
         font-weight: 100;
-        margin-bottom: 0.4rem;
+        margin-bottom: 0.01rem;
     }
 
     .header-subtext-container {
@@ -39,16 +39,15 @@ body {
 }
 
 .main {
-    margin-top: 1rem;
-    >* {
-        margin-bottom: 1rem;
-    }
+    // >.content:not(:last-child){border: 1px solid blue;}
+    margin-top: 0.1rem;
     .title {
         font-size: 18px;
         font-weight: 600;
         color: hsl(0, 0%, 32.5%);
         border-bottom: 2px solid hsl(0, 0%, 0%);
         text-align: left;
+        margin-bottom: 0.01rem;
     }
 
     .subtitle {
@@ -57,10 +56,12 @@ body {
         text-align: left;
     }
 
+    .pg {text-indent: -1.8rem;
+        padding-left: 1.8rem;}
 
-    #projects {
+    /*#projects {
         margin-top: -1.8rem;
-    }
+    }*/
 }
 
 
@@ -70,41 +71,56 @@ body {
 
 
 .job {
-    display: grid;
-    grid: 'jt jp' 'jl jl' 'jd jd'; /*grid: 'jt' 'jd' 'jl' 'jp';*/
+    display: flex;
+    flex-direction: column;
+
+    .topic-line {
+        display: flex;
+    }
 
     .job-title {
-        grid-area: jt;
+        flex: 1;
         font-weight: 600;
         font-size: 17px;
-        text-align: left;
+
+        height: fit-content;
+        display: flex;
+        align-self: end;
+    }
+
+    .flex-cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
     }
     .job-location {
-        grid-area: jl;
-        text-align: right;
-        margin-top: -6px;
-        margin-bottom: 0.3rem;
+        color: gray;
+        font-size: 14px;
     }
     .job-period {
         grid-area: jp;
         text-align: right;
+        margin-top: -0.25rem;
+        // margin-bottom: 0.5rem;
     }
     .job-desc {
         grid-area: jd;
         list-style: none;
-        margin-top: 0px;
-        padding-left: 0px;
+        margin: 0px 0px 0.2rem;
+        // padding: 0;
         >* {
-            margin-top: -0.5em;
-            margin-bottom: 0.5rem;
+            :not(*){margin-top:0;}
+            // margin-top: -0.5em;
+            // margin-bottom: 0.5rem;
         }
     }
 }
 
 .project {
     display: flex;
-    margin-bottom: 1rem;
+    margin-bottom: 0.4rem;
     list-style-position: inside; /* prevents list bullet points from staying outside of element box */
+    &:last-of-type{margin-bottom:0.5rem;}
 
     .project-text {
         display: flex;
@@ -113,15 +129,10 @@ body {
         flex: 4 1 0;
         height: fit-content;
     }
-
-    .project-title {
-        margin-bottom: 6px;
-    }
     
     .project-desc {
         /* word-break: break-word; /* breaks lines after word, fixes the text-wrapping and stretching */
         margin: 0;
-        padding: 0;
         list-style: none;
         p {
             padding: 0;
@@ -134,7 +145,7 @@ body {
     .project-skills {
         flex: 1 1 0;
         gap: 0.4rem;
-        margin-top: 0.8rem;
+        // margin-top: 0.8rem;
         text-align: right;
     }
 
@@ -144,18 +155,20 @@ body {
 
 
 .edu {
-    display: grid;
-    grid: 'ea ea' '. .' 'ed ed';
+    // display: grid;
+    // grid: 'ea ea' '. .' 'ed ed';
     margin-bottom: 1rem;
+    &:last-of-type{margin-bottom: 0.5rem;}
 
     .edu-award {
         grid-area: ea;
-        font-weight: 600;
+        span{font-weight: 600;}
         font-size: 17px;
     }
+    // .edu-location{color:gray;}
     
     .edu-period {
-        text-align: right;
+        color:gray;
     }
     
     .edu-desc {
@@ -167,7 +180,7 @@ body {
 
 #skills {
     p {
-        font-size: 17px;
+        font-size: 16px;
         font-weight: 600;
         text-align: left;
     }

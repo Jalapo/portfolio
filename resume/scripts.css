@@ -15,12 +15,12 @@ body {
 }
 .header #name {
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 .header #loc {
   font-size: 1.2rem;
   font-weight: 100;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.01rem;
 }
 .header .header-subtext-container {
   display: flex;
@@ -34,10 +34,10 @@ body {
 }
 
 .main {
-  margin-top: 1rem;
-}
-.main > * {
-  margin-bottom: 1rem;
+  margin-top: 0.1rem;
+  /*#projects {
+      margin-top: -1.8rem;
+  }*/
 }
 .main .title {
   font-size: 18px;
@@ -45,51 +45,65 @@ body {
   color: hsl(0deg, 0%, 32.5%);
   border-bottom: 2px solid hsl(0deg, 0%, 0%);
   text-align: left;
+  margin-bottom: 0.01rem;
 }
 .main .subtitle {
   font-size: 17px;
   font-weight: 600;
   text-align: left;
 }
-.main #projects {
-  margin-top: -1.8rem;
+.main .pg {
+  text-indent: -1.8rem;
+  padding-left: 1.8rem;
 }
 
 .job {
-  display: grid;
-  grid: "jt jp" "jl jl" "jd jd"; /*grid: 'jt' 'jd' 'jl' 'jp';*/
+  display: flex;
+  flex-direction: column;
+}
+.job .topic-line {
+  display: flex;
 }
 .job .job-title {
-  grid-area: jt;
+  flex: 1;
   font-weight: 600;
   font-size: 17px;
-  text-align: left;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  align-self: end;
+}
+.job .flex-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
 }
 .job .job-location {
-  grid-area: jl;
-  text-align: right;
-  margin-top: -6px;
-  margin-bottom: 0.3rem;
+  color: gray;
+  font-size: 14px;
 }
 .job .job-period {
   grid-area: jp;
   text-align: right;
+  margin-top: -0.25rem;
 }
 .job .job-desc {
   grid-area: jd;
   list-style: none;
-  margin-top: 0px;
-  padding-left: 0px;
+  margin: 0px 0px 0.2rem;
 }
-.job .job-desc > * {
-  margin-top: -0.5em;
-  margin-bottom: 0.5rem;
+.job .job-desc > * :not(*) {
+  margin-top: 0;
 }
 
 .project {
   display: flex;
-  margin-bottom: 1rem;
+  margin-bottom: 0.4rem;
   list-style-position: inside; /* prevents list bullet points from staying outside of element box */
+}
+.project:last-of-type {
+  margin-bottom: 0.5rem;
 }
 .project .project-text {
   display: flex;
@@ -102,13 +116,9 @@ body {
   height: -moz-fit-content;
   height: fit-content;
 }
-.project .project-title {
-  margin-bottom: 6px;
-}
 .project .project-desc {
   /* word-break: break-word; /* breaks lines after word, fixes the text-wrapping and stretching */
   margin: 0;
-  padding: 0;
   list-style: none;
 }
 .project .project-desc p {
@@ -119,22 +129,24 @@ body {
 .project .project-skills {
   flex: 1 1 0;
   gap: 0.4rem;
-  margin-top: 0.8rem;
   text-align: right;
 }
 
 .edu {
-  display: grid;
-  grid: "ea ea" ". ." "ed ed";
   margin-bottom: 1rem;
+}
+.edu:last-of-type {
+  margin-bottom: 0.5rem;
 }
 .edu .edu-award {
   grid-area: ea;
-  font-weight: 600;
   font-size: 17px;
 }
+.edu .edu-award span {
+  font-weight: 600;
+}
 .edu .edu-period {
-  text-align: right;
+  color: gray;
 }
 .edu .edu-desc {
   grid-area: ed;
@@ -143,7 +155,7 @@ body {
 }
 
 #skills p {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 600;
   text-align: left;
 }
