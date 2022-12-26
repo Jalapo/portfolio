@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javen's Resume</title>
-    <link rel="stylesheet" href="scripts.css">
+    <link rel="stylesheet" href="./scripts.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Source+Serif+Pro" />
 </head>
 <body>
@@ -16,69 +16,73 @@
         <div class="header-subtext-container">
             <div class="header-subtext">hire@javenp.com</div>
             <div class="header-subtext">(504) 615-3805</div>
-            <div class="header-subtext">www.javenp.com</div>
+            <div class="header-subtext">    <a href="https://javenp.com">www.javenp.com</a>    </div>
         </div>
     </div>
 
     <!-- MAIN CONTENT -->
 
     <div class="main">
-        
-<!----------------------------EXPERIENCE---------------------------->
-        <div class="title">Experience</div>
-        <div class="content">
-            <div class="job">
-                <div class="topic-line">
-                    <div class="job-title">Data Analyst</div>
-                    <div class="job-period">October 2021 - July 2022</div>
-                </div>
-                <div class="job-location">TELUS International - Remote</div>
-                
-                <ul class="job-desc pg">
-                    <li>• Improved the accessibility of technology and personalization of experiences by training AI used in services utilized by over 1 billion people.</li>
-                    <li>• Analyzed over 50,000 queries against human-provided data to improve the quality of service of everyday web applications which utilize AI software.</li>
-                    <li>• Executed assigned tasks for contract work from Google, Cisco, ServiceNow, and other cloud-services companies.</li>
-                </ul>
-            </div>
 
-            <div class="job">
-                <div class="topic-line">
-                    <div class="job-title">Delivery Driver</div>
-                    <div class="job-period">June 2021 - September 2021</div>
-                </div>
-                <div class="job-location">Green Tea Restaurant - New Orleans, LA</div>
-                <ul class="job-desc pg">
-                    <li>• Packaged and delivered 1 to 4 food orders at a time safely and promptly to customers, alongside planning effective routes with coworkers.</li>
-                    <li>• Completed extra duties of coworkers throughout the day as possible to reduce time spent after hours by up to 50%.</li>
-                    <li>• Increased consumer retention and satisfaction by redirecting customers with concerns related to orders to coworkers capable of handling these issues.</li>
-                </ul>
-            </div>
+<!----------------------------SKILLS---------------------------->
+<div class="title">Skills</div>
 
-            <!-- <div class="job">
-                <div class="topic-line">
-                    <div class="job-title">Transcriptionist</div>
-                    <div class="job-period">June 2019 - June 2020</div>
-                </div>
-                <div class="job-location">Rev - Remote</div>
-                <ul class="job-desc pg">
-                    <li>• Accurately transcribed audio to text using a set of formatting guidelines</li>
-                    <li>• Returned audio files to clients within less than 24 hours</li>
-                </ul>
-            </div>
 
-            <div class="job">
-                <div class="topic-line">
-                    <div class="job-title">Freelance eCommerce</div>
-                    <div class="job-period">November 2017 - March 2021</div>
-                </div>
-                    <div class="job-location">Remote</div>
-                <ul class="job-desc pg">
-                    <li>• Created an online retail business with thousands in revenue</li>
-                    <li>• Solely responsible for the sourcing, marketing, pricing and packaging of items alongside communication with buyers</li>
-                </ul>
-            </div> -->
-        </div>
-<!----------------------------END EXPERIENCE---------------------------->
+<div class="content" id="skills">
+<!--
+    <ul class="list">
+        <li>JavaScript: Proficient in front end scripting and back end web development utilizing Node.js.</li>
+        <li>React: Experienced with developing  efficiently using JavaScript </li>
+        <li>HTML & SASS: Proficient in styling webpages with responsive designs.</li>
+    </ul>
+-->
+
+    <div class="subtitle">Languages</div>
+    <ul class="list sw">
+        <li>JavaScript,</li>
+        <li>HTML 5,</li>
+        <li>CSS3,</li>
+        <li>TypeScript,</li>
+        <!-- <li>JSON,</li> -->
+        <li>SQL,</li>
+        <!-- <li>Python,</li> -->
+        <li>Java</li>
+    </ul>
+    
+    <div class="subtitle">Libraries and Frameworks</div>
+    <ul class="list sw">
+        <li>Node.js,</li>
+        <li>React,</li>
+        <li>jQuery,</li>
+        <li>Express</li>
+    </ul>
+
+    <div class="subtitle">Web Development</div>
+    <ul class="list sw">
+        <li>Developed: <a href="https://www.javenp.com">javenp.com</a>, <a href="https://safelinks.javenp.com/">safelinks.javenp.com</a></li>
+    </ul>
+    
+    <div class="subtitle">Other Tech</div>
+    <ul class="list sw">
+        <li>Git,</li>
+        <li>Microsoft Windows & Linux Operating Systems</li>
+    </ul>
+    
+    
+    <!-- 
+    <div class="subtitle">Personal Skills</div>
+    <ul class="list">
+        <li>Problem solving</li>
+        <li>Learning</li>
+        <li>Adaptivity</li>
+        <li>Teamwork</li>
+        <li>Time management</li>
+        <li>Communication</li>
+    </ul>
+    -->
+</div>
+<!----------------------------END SKILLS---------------------------->
+
 
 <!----------------------------PROJECTS---------------------------->
         <div class="title" id="projects">Projects</div>
@@ -86,16 +90,39 @@
 
             <div class="project">
                 <div class="project-info">
+                    <div class="subtitle">Portfolio Homepage</div>
+                    <a href="https://github.com/jalapo/homepage/" class="project-url">https://github.com/jalapo/homepage/</a>
+                    <div class="project-skills"><span class="bold">Technologies Used</span>: HTML,  SCSS,  JavaScript, jQuery, Express.js, React.js</div>
+                </div>
+                    <div class="project-desc pg">
+                        <!-- <p>• Dynamic web project for showcasing personal work and current technologies at use.</p> -->
+                        <!-- <p>• Constructed a portfolio web page showcasing personal background, work, and professional contact methods.</p> -->
+                        <p>• Increased publicity of work through construction of a portfolio webpage showcasing projects.</p>
+                        <p>• Modernized older webpage without data loss in 2 days by completely redesigning HTML and CSS.</p>
+                        <p>• Innovated the creation of HTML DOM elements, leading to a decrease in development time, through implementation of React.js.</p>
+                        <!-- <p>• Fetches JSON with Node.js backend to present content without editing webpage files, as well as improve initial loading times by around 5-10%.</p> -->
+                        <!-- <p>• Designed RESTful APIs for delivery of content to visitors as well as processing data between server and users.</p> -->
+                    </div>
+
+            </div>
+
+
+            <div class="project">
+                <div class="project-info">
                     <div class="subtitle">Safe Links</div>
-                    <div class="project-skills">HTML  SCSS  JavaScript  jQuery  Node.js MySQL</div>
+                    <a href="https://github.com/jalapo/savedlinks/" class="project-url">https://github.com/jalapo/savedlinks/</a>
+                    <div class="project-skills"><span class="bold">Technologies Used</span>: HTML, SCSS, JavaScript, jQuery, Node.js, MySQL</div>
                 </div>
 
                 <div class="project-desc pg">
-                    <p>• Designed front end and back end for an app which allows users to store and organize up to 1,000 URLs safely across their devices.</p>
-                    <!-- <p>• Minimized wasted time searching and sending links between devices by up to 90% by automatically syncing between device storage and cloud database.</p> -->
-                    <p>• Designed and hosted database for automatic syncing between user device storage and cloud, massively minimizing lost time searching and sharing links.</p>
-                    <p>• Utilized a responsive design approach to optimize UI experience across mobile and desktop devices.</p>
-                    <p>• Developed unique APIs to traverse SQL databases and create images of web pages with zero delay.</p>
+                    <p>• Minimized lost time finding web URLs by developing an app to store URLs locally and in the cloud,
+                        with a front end to quickly search through them.</p>
+                    <!-- <p>• Designed front end and back end for an app which allows users to store and organize up to 1,000 URLs safely across their devices.</p> -->
+                    <!-- <p>• Designed and hosted database for automatic syncing between user device storage and cloud, massively minimizing lost time searching and sharing links.</p> -->
+                    <!-- <p>• Utilized a responsive design approach to optimize UI experience across mobile and desktop devices.</p> -->
+                    <p>• Optimized user experiences across mobile and desktop devices through a responsive design approach.</p>
+                    <p>• Simplified development of UI by implementing jQuery.</p>
+                    <p>• Developed APIs to retrieve SQL server data using Node.js back end.</p>
                 </div>
                 
             </div>
@@ -103,31 +130,20 @@
             <div class="project">
                 <div class="project-info">
                     <div class="subtitle">Color Space Tool</div>
-                    <div class="project-skills">HTML  CSS  JavaScript  Electron  Node.js</div>
+                    <a href="https://github.com/jalapo/color-test/" class="project-url">https://github.com/jalapo/color-test/</a>
+                    <div class="project-skills"><span class="bold">Technologies Used</span>: HTML,  CSS,  JavaScript,  Electron,  Node.js</div>
                 </div>
                 <div class="project-desc pg">
-                    <p>• Developed app for manipulating and translating colors across multiple color spaces, such as HSL and RGB.</p>
-                    <p>• Utilized JavaScript framework Electron to compile the app for cross-platform use for accessibility across over 5B devices.</p>
-                    <p>• Reduced loading times in PWA by approximately 10% through deferred loading of code.</p>
+                    <p>• Simplified translation and manipulation of color codes across color spaces such as HSL and RGB
+                        through development of a web app.</p>
+                    <p>• Utilized JavaScript framework Electron to compile the app for cross-platform use across over 5B devices.</p>
+                    <p>• Reduced loading times in progressive web app by approximately 5% through deferred loading of larger files.</p>
                 </div>
 
             </div>
 
 
-            <div class="project">
-                <div class="project-info">
-                    <div class="subtitle">Portfolio Homepage</div>
-                    <div class="project-skills">HTML  SCSS  JavaScript jQuery Express ReactJS</div>
-                </div>
-                    <div class="project-desc pg">
-                        <!-- <p>• Dynamic web project for showcasing personal work and current technologies at use.</p> -->
-                        <p>• Constructed a dynamic web page showcasing personal projects, professional contact methods, and the status of multiple servers.</p>
-                        <!-- <p>• Fetches JSON with Node.js backend to present content without editing webpage files, as well as improve initial loading times by around 5-10%.</p> -->
-                        <p>• Designed RESTful APIs for delivery of content to visitors as well as processing data between server and users.</p>
-                        <p>• Redesigned web page with React leading to a decrease in development time.</p>
-                    </div>
-
-            </div>
+            
 
             <!--
             <div class="project">
@@ -146,61 +162,90 @@
 <!----------------------------END PROJECTS---------------------------->
 
 
+<!----------------------------EXPERIENCE---------------------------->
+<div class="title">Experience</div>
+<div class="content">
+    <div class="job">
+        <div class="topic-line">
+            <div class="job-title">Data Analyst</div>
+            <div class="job-period">October 2021 - July 2022</div>
+        </div>
+        <div class="job-location">TELUS International - Remote</div>
+        
+        
+        <ul class="job-desc pg">
+            <!-- <li>• Improved the accessibility of technology and personalization of experiences by training AI used in services utilized by over 1 billion people.</li> -->
+            <li>• Improved major travel websites and consumer webpages by analyzing over 100 queries against data scraped from AI daily.</li>
+            <li>• Increased work efficiency through optimization of time tracking methods.</li>
+            <li>• Trained AI used to power services utilized by over 1 billion people.</li>
+            <!-- <li>• Analyzed over 50,000 queries against human-provided data to improve the quality of service of everyday web applications which utilize AI software.</li> -->
+            <!-- <li>• Executed assigned tasks for contract work from Google, Cisco, ServiceNow, and other cloud-services companies.</li> -->
+        </ul>
+    </div>
+
+    <!-- <div class="job">
+        <div class="topic-line">
+            <div class="job-title">Delivery Driver</div>
+            <div class="job-period">June 2021 - September 2021</div>
+        </div>
+        <div class="job-location">Green Tea Restaurant - New Orleans, LA</div>
+        <div class="job-location">June 2021 - September 2021</div>
+        <ul class="job-desc pg">
+            <li>• Packaged and delivered multiple food orders promptly and safely to customers.</li>
+            <li>• Communicated effective routes with team to balance work and minimize wasted time.</li>
+            <li>• Assisted team with periodic duties throughout the day, reducing time spent after hours by up to 50%.</li>
+            <li>• Increased consumer retention by assisting customers with order issues.<br></li>
+        </ul>
+    </div> -->
+
+    <!-- <div class="job">
+        <div class="topic-line">
+            <div class="job-title">Transcriptionist</div>
+            <div class="job-period">June 2019 - June 2020</div>
+        </div>
+        <div class="job-location">Rev - Remote</div>
+        <ul class="job-desc pg">
+            <li>• Created new </li>
+            <li>• Accurately transcribed audio to text using a set of formatting guidelines</li>
+            <li>• Returned audio files to clients within less than 24 hours</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <div class="topic-line">
+            <div class="job-title">Freelance eCommerce</div>
+            <div class="job-period">November 2017 - March 2021</div>
+        </div>
+            <div class="job-location">Remote</div>
+        <ul class="job-desc pg">
+            <li>• Created an online retail business with thousands in revenue</li>
+            <li>• Solely responsible for the sourcing, marketing, pricing and packaging of items alongside communication with buyers</li>
+        </ul>
+    </div> -->
+</div>
+<!----------------------------END EXPERIENCE---------------------------->
+
+
 <!----------------------------EDUCATION---------------------------->
-        <div class="title">Education</div>
-        <div class="content">
+<div class="title">Education</div>
+<div class="content">
 
-            <div class="edu">
-                <div class="edu-award pg"><span>BS Computer Science</span> - Dec. 2024</div>
-                <div class="edu-location pg">University of New Orleans -  New Orleans, Louisiana</div>
-                <!-- <div class="edu-period">2024</div> -->
-            </div>
-            <!--
-            <div class="edu">
-                <div class="edu-award">High School</div>
-                <div class="edu-location">Lusher Charter School - New Orleans, LA</div>
-                <div class="edu-period">2021</div>
-                <div class="edu-desc pg">• cum laude</div>
-            </div>
-            -->
+    <div class="edu">
+        <div class="edu-location pg"><span class="xbold">University of New Orleans</span> -  New Orleans, Louisiana</div>
+        <div class="edu-award pg"><span>B.S. Computer Science</span> - Dec. 2024</div>
+        <!-- <div class="edu-period">2024</div> -->
+    </div>
+    <!--
+    <div class="edu">
+        <div class="edu-award">High School</div>
+        <div class="edu-location">Lusher Charter School - New Orleans, LA</div>
+        <div class="edu-period">2021</div>
+        <div class="edu-desc pg">• cum laude</div>
+    </div>
+    -->
 
-        </div>
+</div>
 <!----------------------------END EDUCATION---------------------------->
-
-
-<!----------------------------SKILLS---------------------------->
-        <div class="title">Skills</div>
-
-        <div class="content" id="skills">
-            <!-- <div class="subtitle">Technical Skills</div> -->
-            <ul class="list">
-                <li>JavaScript</li>
-                <li>Node.js</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>TypeScript</li>
-                <li>Express</li>
-                <li>React</li>
-                <li>JSON</li>
-                <li>Linux</li>
-                <li>SQL</li>
-                <li>Java</li>
-                <li>Git</li>
-            </ul>
-
-            <!--
-            <div class="subtitle">Personal Skills</div>
-            <ul class="list">
-                <li>Problem solving</li>
-                <li>Learning</li>
-                <li>Adaptivity</li>
-                <li>Teamwork</li>
-                <li>Time management</li>
-                <li>Communication</li>
-            </ul>
-            -->
-        </div>
-<!----------------------------END SKILLS---------------------------->
 
     </div>
 </body>

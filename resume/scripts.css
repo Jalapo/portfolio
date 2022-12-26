@@ -6,10 +6,18 @@ html {
   font-family: "Source Serif Pro", serif;
 }
 
+.bold {
+  font-weight: 600;
+}
+
+.xbold {
+  font-weight: 700;
+}
+
 body {
   margin: -0.5rem 0px 0px 0px;
   justify-content: center;
-  font-size: 1.15rem;
+  font-size: 1rem;
 }
 
 .header {
@@ -40,6 +48,13 @@ body {
 .header .header-subtext-container .header-subtext:nth-child(1n+2) {
   border-left: 1px solid black;
 }
+.header .header-subtext-container a {
+  text-decoration: none;
+  color: inherit;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
 
 .main {
   margin-top: 0.1rem;
@@ -59,7 +74,8 @@ body {
 }
 .main .subtitle {
   font-size: 17px;
-  font-weight: 600;
+  color: hsl(0deg, 0%, 0%);
+  font-weight: 700;
   text-align: left;
 }
 .main .pg {
@@ -71,13 +87,20 @@ body {
 .job {
   display: flex;
   flex-direction: column;
+  /*.job-period {
+      grid-area: jp;
+      text-align: right;
+      margin-top: -0.25rem;
+      font-family: "Source Serif Pro", serif;
+      // margin-bottom: 0.5rem;
+  }*/
 }
 .job .topic-line {
   display: flex;
 }
 .job .job-title {
   flex: 1;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 17px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -97,10 +120,9 @@ body {
   margin-top: -0.1rem;
 }
 .job .job-period {
-  grid-area: jp;
-  text-align: right;
-  margin-top: -0.25rem;
-  font-family: "Source Serif Pro", serif;
+  color: black;
+  font-size: 16px;
+  margin: 0;
 }
 .job .job-desc {
   grid-area: jd;
@@ -122,7 +144,6 @@ body {
   margin-bottom: 0.2rem;
 }
 .project .project-info {
-  display: flex;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -132,7 +153,7 @@ body {
 }
 .project .project-desc {
   /* word-break: break-word; /* breaks lines after word, fixes the text-wrapping and stretching */
-  margin: 0;
+  margin: 0.1rem 0 0.25rem;
   list-style: none;
 }
 .project .project-desc p {
@@ -148,19 +169,25 @@ body {
   margin-left: auto;
   font-family: "Source Serif Pro", serif;
 }
+.project .project-url {
+  display: block;
+  color: gray;
+  font-size: 14px;
+  margin: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
 
 .edu {
   margin-bottom: 1rem;
 }
-.edu:last-of-type {
-  margin-bottom: 0.25rem;
-}
 .edu .edu-award {
   grid-area: ea;
-  font-size: 17px;
 }
-.edu .edu-award span {
-  font-weight: 600;
+.edu .edu-location > span {
+  font-size: 17px;
+  font-weight: 700;
 }
 .edu .edu-period {
   color: gray;
@@ -176,16 +203,21 @@ body {
   font-weight: 600;
   text-align: left;
 }
+#skills .subtitle {
+  margin-top: -0.175rem;
+}
 #skills .list {
-  display: flex;
   flex-wrap: wrap;
   list-style: none;
-  text-align: center;
   padding: 0;
   margin-top: 0.01rem;
   gap: 0.8rem;
 }
+#skills .list.sw {
+  display: flex;
+  margin: 0.1rem 0;
+}
 #skills li {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: "Source Serif Pro", serif;
 }/*# sourceMappingURL=scripts.css.map */
